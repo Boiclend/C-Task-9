@@ -6,7 +6,7 @@ int Message(string text) {
     return num;
 }
 
-int[] FillArray(int n){
+int[] FillArray(int n){ // Заполнение массива случайными числами
     int[] arr = new int[n];
     for (int i = 0; i < arr.Length; i++)
     {
@@ -16,14 +16,14 @@ int[] FillArray(int n){
     return arr;
 }
 
-void GetArray(int[] arr) {
+void GetArray(int[] arr) { // Вывод массива
     for (int i = 0; i < arr.Length; i++)
     {
         Console.Write(arr[i] + " ");
     }
 }
 
-int[] FindElements(int[] MyArr) {
+int[] FindElements(int[] MyArr) { 
     int[] array  = Array.FindAll(MyArr, i => i % 2 != 0); // поиск группы элементов в массиве с условием, что они должны быть нечётными.
     return array;
 }
